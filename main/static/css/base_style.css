@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Lobster&display=swap');
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+    background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+
+body {
+    background-color: white;
+    /*font-family: 'Lobster', cursive;*/
+    font-family: 'Kurale', serif;
+}
+
+.castom_container {
+    margin: auto;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+@media (min-width: 576px) {
+    .castom_container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .castom_container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .castom_container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .castom_container {
+        width: 1140px;
+    }
+}
+
+header {
+    /*position: fixed;*/
+}
+
+a {
+    font-weight: bold;
+    color: #0d043f;
+    text-decoration: none;
+    transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    font-family: 'Kurale', serif;
+}
+
+a:hover {
+    color: black;
+}
+
+#main_name > h1 {
+    /*font-size: 2rem;*/
+    /*font-family: 'Kurale', serif;*/
+    font-family: 'Lobster', cursive;
+}
+
+#main_name > h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav_block i {
+    color: deeppink;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.nav_block > div {
+    display: flex;
+    align-items: center;
+}
+
+.nav_block h3, .nav_block p {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback_button {
+    height: 40px;
+    width: 180px;
+    /*background-color: deeppink;*/
+    background: linear-gradient(to top, #d7147a, deeppink);
+    border-radius: 5px;
+    margin: auto;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.feedback_button:hover {
+    color: #0f0482;
+}
+
+.feedback_button p {
+    margin: auto;
+}
+
+#nav_menu {
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    /*margin: 0.5rem;*/
+
+}
+
+#nav_menu > a {
+    margin: 0.5rem 0;
+}
+
+#nav_menu > a:hover {
+    /*color: #1005f0;*/
+    color: black;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    margin: 0.45rem 0 0 0;
+}
+
+/*#social {*/
+/*    float: right;*/
+/*    width: 10%;*/
+/*    margin-right: 5%;*/
+/*    margin-top: 1%;*/
+/*}*/
+
+/*#social > a {*/
+/*    border-radius: 50%;*/
+/*    -moz-border-radius: 50%;*/
+/*    -webkit-border-radius: 50%;*/
+/*    background-color: rgba(217, 91, 72, 1);*/
+/*    margin-left: 2%;*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    float: right;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    line-height: 30px;*/
+/*    font-size: 1.2em;*/
+/*}*/
+
+/*#social > a:hover {*/
+/*    background-color: rgba(217, 91, 72, 0.6);*/
+/*}*/
+
+/* {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*body, html {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*body {*/
+/*    !*background-color: red;*!*/
+/*}*/
+
+/*a {*/
+/*    !*color: #fa713e;*!*/
+/*    !*color: #6d02ff;*!*/
+/*    color: red;*/
+/*    text-decoration: none;*/
+/*    transition: all .6s ease;*/
+/*    !*transition: all.6s ease;*!*/
+/*    -o-transition: all .6s ease;*/
+/*    -moz-transition: all .6s ease;*/
+/*    -webkit-transition: all .6s ease;*/
+/*}*/
+
+/*a:hover {*/
+/*    !*color: #c34f25;*!*/
+/*    color: blue;*/
+/*    text-decoration: none;*/
+/*    transition: all .6s ease;*/
+/*    !*transition: all.6s ease;*!*/
+/*    -o-transition: all .6s ease;*/
+/*    -moz-transition: all .6s ease;*/
+/*    -webkit-transition: all .6s ease;*/
+/*}*/
+
+/*img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    width: auto \9;*/
+/*    !*transition: all.3s ease;*!*/
+/*    -moz-transition: all 3s ease-out;*/
+/*    -o-transition: all .3s ease;*/
+/*    -webkit-transition: all .3s ease;*/
+/*}*/
+
+
+/*header {*/
+/*    !*position: fixed;*!*/
+/*    !*float: left;*!*/
+/*    !*background-color: #fbe7e8;*!*/
+/*    !*background-color: white;*!*/
+/*    !*opacity: 0.75;*!*/
+/*    width: 99.4%;*/
+/*    padding: 0.3%;*/
+/*}*/
+
+/*header:hover {*/
+/*    opacity: 1;*/
+/*    transition: all .6s ease;*/
+/*}*/
+
+/*header > div#logo {*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    float: left;*/
+/*}*/
+
+/*header > div#logo > a {*/
+/*    text-align: center;*/
+/*}*/
+
+/*header > div#logo > a > img {*/
+/*    !*opacity: 0;*!*/
+/*    margin-left: 15%;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    float: left;*/
+/*}*/
+
+
+/*header > div#logo > a > span {*/
+/*    margin-right: 10%;*/
+/*    font-size: 3.5em;*/
+/*    !*font-family: 'Kurale', serif;*!*/
+/*    font-family: 'Lobster', cursive;*/
+/*    !*margin-top: 1%;*!*/
+
+/*}*/
+
+/*!*нужна будет адаптивность*!*/
+
+/*#nav_menu {*/
+/*    float: left;*/
+/*    !*margin-top: 1%;*!*/
+/*    width: 40%;*/
+/*    text-align: center;*/
+/*    font-family: 'Kurale', serif;*/
+/*    font-size: 1.4em;*/
+/*    padding-top: 1%;*/
+/*    text-shadow: #c34f25 0 0 1px;*/
+/*}*/
+
+/*#nav_menu > a {*/
+/*    margin-left: 3%;*/
+/*}*/
+
+/*#nav_menu > a:hover {*/
+/*    !*color: #1005f0;*!*/
+/*    border-bottom: 1px solid #c34f25;*/
+/*}*/
+
+
+/*#wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    height: 100%;*/
+
+/*}*/
+
+/*#content {*/
+/*    !*flex: 1 0 auto;*!*/
+/*    width: 100%;*/
+/*    height: 1500px;*/
+/*    background-color: #f4dcde;*/
+
+/*    !*background-color: white;*!*/
+/*    !*background-color: #fbe7e8;*!*/
+/*    !*background-size: 30%;*!*/
+/*    !*bactransform: rotate(90deg);*!*/
+/*    background-repeat: no-repeat;*/
+/*    !*background-position: right;*!*/
+
+/*    background-size: 70%;*/
+/*    !*background-position-y: -100px;*!*/
+/*    !*opacity: 90%;*!*/
+/*    !*background-position-y: 0px;*!*/
+
+
+/*    background-position-x: 100%;*/
+/*    !*background-position-y: 100px;*!*/
+/*    !*background-attachment: fixed;*!*/
+/*    !*transform: translate3d(0px,300px, 0px);*!*/
+/*}*/
+
+/*nav {*/
+/*    background-color: rgba(251, 26, 217, 0.3);*/
+/*    width: 99.4%;*/
+/*    padding: 0.3%;*/
+/*    float: right;*/
+/*    border-bottom: 2px solid silver;*/
+/*}*/
+
+/*.fixed {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    opacity: 0.93;*/
+/*    !*height: ;*!*/
+/*}*/
+
+/*.fixed:hover {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*#social {*/
+/*    float: right;*/
+/*    width: 10%;*/
+/*    margin-right: 5%;*/
+/*    margin-top: 1%;*/
+/*}*/
+
+/*#social > a {*/
+/*    border-radius: 50%;*/
+/*    -moz-border-radius: 50%;*/
+/*    -webkit-border-radius: 50%;*/
+/*    background-color: rgba(217, 91, 72, 1);*/
+/*    margin-left: 2%;*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    float: right;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    line-height: 30px;*/
+/*    font-size: 1.2em;*/
+/*}*/
+
+/*#social > a:hover {*/
+/*    background-color: rgba(217, 91, 72, 0.6);*/
+/*}*/
+
+/*.container {*/
+/*    height: 1500px;*/
+/*    opacity: 0;*/
+/*    !*background-color: #f4b1ba;*!*/
+/*}*/
+
+
+/*footer {*/
+/*    float: left;*/
+/*    background-color: #fb6399;*/
+/*    width: 99.4%;*/
+/*    padding: 0.3%;*/
+/*    border-top: 5px solid #f4b1ba;*/
+/*    font-family: 'Kurale', serif;*/
+/*    color: white;*/
+/*}*/
+
+
+/*#site_name {*/
+/*    margin-right: 5%;*/
+/*    color: #f7f5fa;*/
+/*    font-size: 2em;*/
+/*    float: right;*/
+/*}*/
+
+/*#site_name > span {*/
+/*    font-family: 'Lobster', cursive;*/
+/*}*/
+
+/*@media (max-width: 1080px) {*/
+/*    #clear {*/
+/*        clear: both;*/
+/*    }*/
+/*}*/
+
+/*#footer_menu {*/
+/*    font-size: 1.2em;*/
+/*    width: 50%;*/
+/*}*/
+
+/*#footer_menu > a {*/
+/*    margin-left: 2%;*/
+/*    color: white;*/
+/*}*/
+
+/*#footer_menu > a:hover, #rights > a:hover {*/
+/*    border-bottom: 1px solid silver;*/
+/*    color: #aeaeae;*/
+/*}*/
+
+/*#rights {*/
+/*    float: left;*/
+/*    margin-left: 5%;*/
+/*    font-size: 1.1em;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*#rights > a {*/
+/*    color: white;*/
+/*}*/
