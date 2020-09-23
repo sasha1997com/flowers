@@ -1,33 +1,53 @@
 {% extends 'main/base.html' %}
 {% load static %}
-
-
+{% block link_css %}
+        <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+{% endblock %}
 {% block main_content %}
-    <div id="main_content">
+    <div class="main_content">
         <div id="main_background">
             <div class="blackout flex-container">
                 <div class="">
-                    <h1 style="text-align: center">Большая красивая фраза</h1>
+                    <h1>Большая красивая фраза</h1>
                     <p>описание большой красивой фразы маленькой, но тоже красивой фразой</p>
                 </div>
-
             </div>
         </div>
-
         <div class="castom_container">
             <div class="all_card_main flex-container">
                 <div class="card_main">
+                    <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+                    <div class="">
+                        <h2>Букеты</h2>
+                        <p>Описание красивых букетов </p>
+                        <a class="feedback_button" href="{% url 'bouquets_url' %}">Подробнее</a>
+                    </div>
 
                 </div>
 
                 <div class="card_main">
+                    <img src="{% static 'img/IMG_E2810.JPG' %}" alt="">
+                    <div class="">
+                        <h2>Букеты невесты</h2>
+                        <p>Описание букетов невесты</p>
+                        <a class="feedback_button" href="#">Подробнее</a>
+                    </div>
 
                 </div>
                 <div class="card_main">
-
+                    <img src="{% static 'img/IMG_E2799.JPG' %}" alt="">
+                    <div class="">
+                        <h2>Композиции</h2>
+                        <p>Описание композиций</p>
+                        <a class="feedback_button" href="#">Подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="how_work">
+
+        </div>
+
 
 
     </div>

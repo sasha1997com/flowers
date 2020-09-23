@@ -3,8 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {#    <link rel="stylesheet" href="{% static 'css/bouquets_styles.css' %}">#}
+    {#    <link rel="stylesheet" href="{% static 'css/home_style.css' %}">#}
+
+    {% block link_css %}
+
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -55,49 +60,60 @@
         {#        </div>#}
         <div class="nav castom_container">
             <div class="flex-container">
-                <div style="flex: 2">
+                <div class="flex_2">
                     <a id="main_name" href="{% url 'home_url' %}">
                         <h1>Цветочный бульвар</h1>
                         Профессиональная флористика
                     </a>
                 </div>
-                <div class="nav_block flex-container" style="flex: 1">
-                    <div style="flex: 1">
+                <div class="nav_block flex-container flex_1">
+                    <div class="flex_1">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
 
-                    <div style="flex: 5">
+                    <div class="flex_5">
                         <div>
                             <h3>Адрес</h3>
-                            <p>Восход 13 так где-то</p>
+                            <p>Восход 13 там где-то</p>
                         </div>
                     </div>
                 </div>
-                <div class="nav_block flex-container" style="flex: 1">
-                    <div style="flex: 1">
+                <div class="nav_block flex-container flex_1">
+                    <div class="flex_1">
                         <i class="fas fa-phone-alt"></i>
                     </div>
 
-                    <div style="flex: 5">
+                    <div class="flex_5">
                         <div>
                             <h3>Телефон</h3>
                             <a href="tel:+79059510694">+7 (905) 951-06-94</a>
                         </div>
                     </div>
                 </div>
-                <div class="flex-container" style="flex: 1">
+                <div class="flex-container flex_1">
                     <a class="feedback_button" href="https://google.com">
-                        <p>Обратный звонок</p>
+                        Обратный звонок
                     </a>
                 </div>
             </div>
             <hr>
             <div class="flex-container">
-                <div id="nav_menu">
-                    <a href="" title="О наших букетах">Букеты</a>
-                    <a href="" title="Где мы находимся">О нас</a>
-                    <a href="" title="Демонстрация наших букетов">Букеты</a>
-                    <a href="" title="Написать нам">Обратная связь</a>
+                <div class="nav_menu">
+                    <a href="{% url 'home_url' %}">Главная</a>
+                    <div class="dropdown">
+                        <a href="#" title="">
+                            Продукты
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown_content">
+                            <a href="{% url 'bouquets_url' %}">Букеты</a>
+                            <a href="#2">Букеты&nbspневесты</a>
+                            <a href="#3">Композиции</a>
+                        </div>
+                    </div>
+                    <a href="" title="">Контакты</a>
+                    <a href="" title="">О нас</a>
+
                 </div>
                 {#                <div id="social">#}
                 {#                    <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>#}
@@ -117,25 +133,25 @@
     {% endblock %}
 
 </div>
-{##}
-{#<footer>#}
-{#    <div id="site_name">#}
-{#        <span>Цветочный бульвар</span>#}
-{#    </div>#}
-{##}
-{#    <div id="clear"></div>#}
-{#    <div id="footer_menu">#}
-{#        <a href="" title="Демонстрация наших букетов">Букеты</a>#}
-{#        <a href="" title="Написать нам">Обратная связь</a>#}
-{#    </div>#}
-{#    <div id="rights">#}
-{#        <a href="">Все права защищены &copy; Тут будет год</a>#}
-{#    </div>#}
-{#    <div id="social">#}
-{#        <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>#}
-{#        <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>#}
-{#    </div>#}
-{#</footer>#}
+
+<footer>
+    <div id="site_name">
+        <span>Цветочный бульвар</span>
+    </div>
+
+    <div id="clear"></div>
+    <div id="footer_menu">
+        <a href="" title="Демонстрация наших букетов">Букеты</a>
+        <a href="" title="Написать нам">Обратная связь</a>
+    </div>
+    <div id="rights">
+        <a href="">Все права защищены &copy; Тут будет год</a>
+    </div>
+    <div id="social">
+        <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>
+        <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
 <script src="https://kit.fontawesome.com/32b04edffc.js" crossorigin="anonymous"></script>
 
 </body>
