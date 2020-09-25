@@ -149,10 +149,9 @@
         </div>
         <div id="footer_menu" class="flex_1">
             <h4>Навигация</h4>
-            <a href="" title="Демонстрация наших букетов">Букеты</a>
-            <a href="" title="Демонстрация наших букетов">Букеты еще</a>
-            <a href="" title="Демонстрация наших букетов">Букеты еще 2</a>
-            <a href="" title="Демонстрация наших букетов">Букеты еще 3</a>
+            <a href="{% url 'bouquets_url' %}">Букеты</a>
+            <a href="{% url 'bouquets_nevest_url' %}">Букеты&nbspневесты</a>
+            <a href="{% url 'compositions_url' %}">Композиции</a>
         </div>
         <div id="social" class="flex_1">
             <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>
