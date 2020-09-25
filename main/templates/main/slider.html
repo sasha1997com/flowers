@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JavaScript - Как сделать слайдер для сайта</title>
+    <link rel="stylesheet" href="{% static 'css/slider_style.css' %}">
+</head>
+
+<body>
+
+<div class="slider">
+    <div class="slider__wrapper">
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_E2339.JPG' %}" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_E4008.JPG' %}" alt="">
+        </div>
+        <div class="slider__item">
+            <div style="background: orange;">1</div>
+        </div>
+        <div class="slider__item">
+            <div style="background: green;">2</div>
+        </div>
+
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_2759.JPG' %}" alt="">
+        </div>
+        <div class="slider__item">
+            <div style="background: violet;">3</div>
+        </div>
+        <div class="slider__item">
+            <div style="background: coral;">4</div>
+        </div>
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+        </div>
+        <div class="slider__item">
+            <div style="background: brown;">5</div>
+        </div>
+        <div class="slider__item">
+            <div style="background: orchid;">6</div>
+        </div>
+        <div class="slider__item">
+            <div style="background: aqua;">7</div>
+        </div>
+        <div class="slider__item">
+            <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+        </div>
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+</div>
+<script src="{% static 'js/slider.js' %}"></script>
+
+</body>
+
+</html>
