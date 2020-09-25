@@ -1,32 +1,27 @@
 #main_background {
-    background-image: url("../img/IMG_2398.JPG");
+    background-image: url("../img/IMG_23411.JPG");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    background-position-y: 75%;
+    background-position-y: 55%;
     background-position-x: 50%;
     min-height: 100px;
-    height: 300px;
-    /*opacity: 0.8;*/
+    height: 500px;
     text-align: center;
-}
-
-#main_background > .blackout {
-    /*background-color: black;*/
-    /*opacity: 0.6;*/
-    width: 100%;
-    height: 100%;
-    font-size: 1.4em;
-}
-
-#main_background > .blackout > div {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 3rem 0 0 0;
     color: white;
-    opacity: 1;
-    margin: auto;
+    font-size: 1.7rem;
+    /*position: relative;*/
 }
 
-#main_background > .blackout > div > h1 {
-    margin: auto;
+#main_background h1, #main_background p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main_arguments {
+    margin-top: 130px;
 }
 
 .all_card_main {
@@ -78,4 +73,10 @@
     background-position-y: 63%;
     background-position-x: 50%;
     height: 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,15 +1,32 @@
 {% extends 'main/base.html' %}
 {% load static %}
 {% block link_css %}
-        <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
 {% endblock %}
 {% block main_content %}
     <div class="main_content">
         <div id="main_background">
-            <div class="blackout flex-container">
+            <div class="castom_container">
                 <div class="">
                     <h1>Большая красивая фраза</h1>
                     <p>описание большой красивой фразы маленькой, но тоже красивой фразой</p>
+                </div>
+                <div class="flex-container main_arguments">
+                    <div class="flex_1">
+                        <p>Более</p>
+                        <h1>20</h1>
+                        <p>Лет на рынке</p>
+                    </div>
+                    <div class="flex_1">
+                        <p>что-то</p>
+                        <h1>300</h1>
+                        <p>и более</p>
+                    </div>
+                    <div class="flex_1">
+                        <p>средняя оценка</p>
+                        <h1>10/10</h1>
+                        <p>на кинопоиске</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,7 +47,7 @@
                     <div class="">
                         <h2>Букеты невесты</h2>
                         <p>Описание букетов невесты</p>
-                        <a class="feedback_button" href="#">Подробнее</a>
+                        <a class="feedback_button" href="{% url 'bouquets_nevest_url' %}">Подробнее</a>
                     </div>
 
                 </div>
@@ -39,15 +56,16 @@
                     <div class="">
                         <h2>Композиции</h2>
                         <p>Описание композиций</p>
-                        <a class="feedback_button" href="#">Подробнее</a>
+                        <a class="feedback_button" href="{% url 'compositions_url' %}">Подробнее</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="how_work">
-
+            <h1>Что-то написано</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque eaque exercitationem magni neque
+                nostrum possimus tempora tempore tenetur, vel.</p>
         </div>
-
 
 
     </div>

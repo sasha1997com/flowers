@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     {#    <link rel="stylesheet" href="{% static 'css/bouquets_styles.css' %}">#}
     {#    <link rel="stylesheet" href="{% static 'css/home_style.css' %}">#}
-
+    <link rel="stylesheet" href="{% static 'css/slider_style.css' %}">
     {% block link_css %}
 
     {% endblock %}
+
     <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -58,7 +59,7 @@
         {#            <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>#}
         {#            <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>#}
         {#        </div>#}
-        <div class="nav castom_container">
+        <div class=" castom_container">
             <div class="flex-container">
                 <div class="flex_2">
                     <a id="main_name" href="{% url 'home_url' %}">
@@ -97,7 +98,7 @@
                 </div>
             </div>
             <hr>
-            <div class="flex-container">
+            <div class="nav">
                 <div class="nav_menu">
                     <a href="{% url 'home_url' %}">Главная</a>
                     <div class="dropdown">
@@ -107,18 +108,18 @@
                         </a>
                         <div class="dropdown_content">
                             <a href="{% url 'bouquets_url' %}">Букеты</a>
-                            <a href="#2">Букеты&nbspневесты</a>
-                            <a href="#3">Композиции</a>
+                            <a href="{% url 'bouquets_nevest_url' %}">Букеты&nbspневесты</a>
+                            <a href="{% url 'compositions_url' %}">Композиции</a>
                         </div>
                     </div>
                     <a href="" title="">Контакты</a>
                     <a href="{% url 'slider_url' %}" title="">Слайдер</a>
 
                 </div>
-                {#                <div id="social">#}
-                {#                    <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>#}
-                {#                    <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>#}
-                {#                </div>#}
+                <div id="social">
+                    <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>
+                    <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
 
 
@@ -135,24 +136,32 @@
 </div>
 
 <footer>
-    <div id="site_name">
-        <span>Цветочный бульвар</span>
+    <div class="castom_container flex-container">
+        <div id="name_footer flex_1">
+            <a id="main_name" href="{% url 'home_url' %}">
+                <h1>Цветочный бульвар</h1>
+                Профессиональная флористика
+            </a>
+
+        </div>
+        <div id="rights">
+            <a href=""><small>Все права защищены &copy; Тут будет год</small></a>
+        </div>
+        <div id="footer_menu" class="flex_1">
+            <h4>Навигация</h4>
+            <a href="" title="Демонстрация наших букетов">Букеты</a>
+            <a href="" title="Демонстрация наших букетов">Букеты еще</a>
+            <a href="" title="Демонстрация наших букетов">Букеты еще 2</a>
+            <a href="" title="Демонстрация наших букетов">Букеты еще 3</a>
+        </div>
+        <div id="social" class="flex_1">
+            <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>
+            <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
 
-    <div id="clear"></div>
-    <div id="footer_menu">
-        <a href="" title="Демонстрация наших букетов">Букеты</a>
-        <a href="" title="Написать нам">Обратная связь</a>
-    </div>
-    <div id="rights">
-        <a href="">Все права защищены &copy; Тут будет год</a>
-    </div>
-    <div id="social">
-        <a href="" title="Группа ВК"><i class="fab fa-vk"></i></a>
-        <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
 </footer>
 <script src="https://kit.fontawesome.com/32b04edffc.js" crossorigin="anonymous"></script>
-
+<script src="{% static 'js/slider.js' %}"></script>
 </body>
 </html>

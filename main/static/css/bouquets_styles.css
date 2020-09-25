@@ -4,21 +4,9 @@
 }
 
 .slider {
-    margin: 12rem auto 1rem auto;
-    width: 500px;
-    border: 5px solid black;
+    width: 100%;
+    /*border: 3px solid black;*/
 }
-.polosa {
-    background: #d7147a;
-    width: 1250px;
-    position: relative;
-}
-.polosa img{
-    float: left;
-    width: 250px;
-}
-.polosa::after {
-    content: "";
-    display: block;
-    clear: both;
+.slider img {
+    max-width: 100%;
 }

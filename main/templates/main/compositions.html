@@ -1,0 +1,92 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'css/bouquets_styles.css' %}">
+    <script src="{% static 'js/slider.js' %}" defer></script>
+{% endblock %}
+{% block main_content %}
+    <div class="main_content">
+
+        <div class="castom_container text_center">
+            <h2>Композиции любой сложности</h2>
+            <img src="{% static 'img/IMG_E4008.JPG' %}" alt="" class="left_img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus facilis molestiae ut.
+                Accusamus distinctio eaque enim ipsum maxime numquam perspiciatis quam, quasi qui, quod repudiandae
+                velit, vitae voluptates?</p>
+            <div class="">
+                <i class="fas fa-check check"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odit qui repellendus temporibus ut
+                    velit!</p>
+            </div>
+            <div class="">
+                <i class="fas fa-check check"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odit qui repellendus temporibus ut
+                    velit!</p>
+            </div>
+            <div class="">
+                <i class="fas fa-check check"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere odit qui repellendus temporibus ut
+                    velit!</p>
+            </div>
+        </div>
+        <div class="castom_container" style="margin: 20px auto 0 auto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolor doloribus, enim fugit illo
+                impedit, in labore molestias nobis nulla numquam perspiciatis placeat, quaerat qui quis rerum sit ullam.
+                Alias aliquam aliquid amet asperiores consequuntur culpa debitis deserunt dolores ducimus, enim, error
+                fugit, in iste itaque labore laboriosam minus molestias neque nulla quam quibusdam repudiandae saepe
+                sint sit veritatis voluptas voluptatem. Aperiam culpa hic molestiae non! Adipisci animi dolore facere
+                quibusdam. Amet id, iure molestias nisi rem tempore veniam vitae? Ad aliquam assumenda deserunt
+                distinctio eius est, maiores, perferendis perspiciatis reiciendis saepe, similique sint sunt veniam.
+                Laboriosam necessitatibus, quia?</p>
+        </div>
+
+        <div class="slider">
+            <div class="slider__wrapper">
+                {#                <div class="slider__item">#}
+                {#                    <img src="{% static 'img/IMG_E2339.JPG' %}" alt="">#}
+                {#                </div>#}
+                {#                <div class="slider__item">#}
+                {#                    <img src="{% static 'img/IMG_E4008.JPG' %}" alt="">#}
+                {#                </div>#}
+                <div class="slider__item">
+                    <div style="background: orange;">1</div>
+                </div>
+                <div class="slider__item">
+                    <div style="background: green;">2</div>
+                </div>
+
+                <div class="slider__item">
+                    <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'img/IMG_2759.JPG' %}" alt="">
+                </div>
+                <div class="slider__item">
+                    <div style="background: violet;">3</div>
+                </div>
+                <div class="slider__item">
+                    <div style="background: coral;">4</div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+                </div>
+                <div class="slider__item">
+                    <div style="background: brown;">5</div>
+                </div>
+                <div class="slider__item">
+                    <div style="background: orchid;">6</div>
+                </div>
+                <div class="slider__item">
+                    <div style="background: aqua;">7</div>
+                </div>
+                <div class="slider__item">
+                    <img src="{% static 'img/IMG_2348.JPG' %}" alt="">
+                </div>
+            </div>
+            <a class="slider__control slider__control_left" href="#" role="button"></a>
+            <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+
+    </div>
+
+{% endblock %}
