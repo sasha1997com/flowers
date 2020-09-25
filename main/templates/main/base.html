@@ -132,7 +132,11 @@
 
     {% block main_content %}
     {% endblock %}
+{#    <div class="castom_container">#}
+{#        <div id="map" style="width: 100%; height: 400px"></div>#}
+{#    </div>#}
 
+{#    {% include 'main/includes/feedback.html' %}#}
 </div>
 
 <footer>
@@ -162,5 +166,22 @@
 </footer>
 <script src="https://kit.fontawesome.com/32b04edffc.js" crossorigin="anonymous"></script>
 <script src="{% static 'js/slider.js' %}"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [55.015492, 82.942486],
+            zoom: 16
+        });
+        DG.marker([55.016246, 82.946087])
+            .addTo(map)
+            .bindLabel('Цветочный больвар', {
+                offset: DG.point(-90, 5)
+            });
+
+    });
+</script>
 </body>
 </html>
