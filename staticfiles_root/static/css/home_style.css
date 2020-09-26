@@ -1,0 +1,82 @@
+#main_background {
+    background-image: url("../img/IMG_23411.JPG");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position-y: 55%;
+    background-position-x: 50%;
+    min-height: 100px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 3rem 0 0 0;
+    color: white;
+    font-size: 1.7rem;
+    /*position: relative;*/
+}
+
+#main_background h1, #main_background p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main_arguments {
+    margin-top: 130px;
+}
+
+.all_card_main {
+    /*background-color: blueviolet;*/
+    margin: 4rem 0;
+    min-height: 100px;
+}
+
+.card_main {
+    /*background-color: red;*/
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card_main img {
+    width: 100%;
+    /*height: 300px;*/
+    /*max-height: 390px;*/
+    /*display: block;*/
+    vertical-align: center;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card_main img:hover {
+    opacity: 0.9;
+    /*transform: scale(1.1);*/
+    /*z-index: -100;*/
+}
+
+.card_main > div {
+    padding: 0 10px 15px 10px;
+}
+
+
+.card_main h2, .card_main p {
+    margin: 10px 0 10px 0;
+}
+
+.how_work {
+    width: 100%;
+    background-image: url("../img/IMG_E2339.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 63%;
+    background-position-x: 50%;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

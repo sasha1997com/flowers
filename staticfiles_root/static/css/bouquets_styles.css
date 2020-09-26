@@ -1,0 +1,12 @@
+
+.main_content img {
+    max-width: 50%;
+}
+
+.slider {
+    width: 100%;
+    /*border: 3px solid black;*/
+}
+.slider img {
+    max-width: 100%;
+}
