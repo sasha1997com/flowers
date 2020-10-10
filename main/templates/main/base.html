@@ -39,6 +39,9 @@
     {#            content.style.backgroundPositionY = s +'px';#}
     {#        })#}
     {#    </script>#}
+    {#    <script type="text/javascript" charset="utf-8" async#}
+    {#            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A677ecee61836aa8406fad2753adc4ca25788a05a28b1115cb8e131e5ddfe948e&amp;width=100%25&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>#}
+
 </head>
 <body>
 <div id="wrapper">
@@ -135,8 +138,17 @@
 {#    <div class="castom_container">#}
 {#        <div id="map" style="width: 100%; height: 400px"></div>#}
 {#    </div>#}
-
-{#    {% include 'main/includes/feedback.html' %}#}
+{#    <div class="castom_container">#}
+{#        <div id="mapGis" style="width: 100%; height: 400px; margin-top: 50px"></div>#}
+{#    </div>#}
+    <div class="castom_container" style=" margin-top: 50px">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A113b8c236b82180d7b9cfda28474709a4d55b15b804bb8534da65902caa2fcee&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="castom_container" style="margin-top: 50px">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01a2d6b56ceebbfa015df017864909f15c698f6fcda93b777969ffa041f47648&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
 </div>
 
 <footer>
@@ -166,22 +178,34 @@
 </footer>
 <script src="https://kit.fontawesome.com/32b04edffc.js" crossorigin="anonymous"></script>
 <script src="{% static 'js/slider.js' %}"></script>
-<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-<script type="text/javascript">
-    var map;
-
-    DG.then(function () {
-        map = DG.map('map', {
-            center: [55.015492, 82.942486],
-            zoom: 16
-        });
-        DG.marker([55.016246, 82.946087])
-            .addTo(map)
-            .bindLabel('Цветочный больвар', {
-                offset: DG.point(-90, 5)
-            });
-
-    });
-</script>
+{#<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>#}
+{#<script type="text/javascript">#}
+{#    var map;#}
+{##}
+{#    DG.then(function () {#}
+{#        map = DG.map('mapGis', {#}
+{#            center: [55.015492, 82.942486],#}
+{#            zoom: 16#}
+{#        });#}
+{#        DG.marker([55.016246, 82.946087])#}
+{#            .addTo(map)#}
+{#            .bindLabel('Цветочный больвар', {#}
+{#                offset: DG.point(-90, 5)#}
+{#            });#}
+{##}
+{#    });#}
+{#</script>#}
+{#ANjcgV8BAAAAT_CqOgIASMUsScNiqcjch2GtKknys0_fwIsAAAAAAAAAAAB3lf8S4Y2OhIm8gztnBjX_d1-Bog==#}
+{#<script#}
+{#        src="https://api-maps.yandex.ru/2.1/?apikey=ANjcgV8BAAAAT_CqOgIASMUsScNiqcjch2GtKknys0_fwIsAAAAAAAAAAAB3lf8S4Y2OhIm8gztnBjX_d1-Bog==&load=Map&lang=ru_RU"#}
+{#        type="text/javascript"></script>#}
+{#<script type="text/javascript">#}
+{#    ymaps.ready(function () {#}
+{#        var map = new ymaps.Map("map", {#}
+{#            center: [55.015492, 82.942486],#}
+{#            zoom: 16#}
+{#        });#}
+{#    });#}
+{#</script>#}
 </body>
 </html>
