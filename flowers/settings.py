@@ -21,6 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'o_+0f1$(8pisjv0e@-cvl13r^qrcf#&d7j^63*#@6du*5$pe7h'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LdWUdYZAAAAAP7OhXcJQndBoreBrMihXbEYohTw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -126,3 +127,11 @@ MEDIA_URL = '/media/'
 #
 # db_from_env = dj_database_url.config()
 # DATABASES['default'].update(db_from_env)
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'noreply.flowers5430@mail.ru'
+EMAIL_HOST_PASSWORD = '2X2sassas'
+
+

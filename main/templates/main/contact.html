@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'css/contact_style.css' %}">
+
+
+{% endblock %}
+
+{% block main_content %}
+    <div class="my-1rem">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01a2d6b56ceebbfa015df017864909f15c698f6fcda93b777969ffa041f47648&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
+    <div class="castom_container my-2rem">
+        <h2 class="contact_information_phrase">Контактная информация</h2>
+        <div class="flex-container">
+            <div class="flex_1">
+
+            </div>
+            <div class="flex_1">
+
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+{##}
+{#            <div class="castom_container" style=" margin-top: 50px">#}
+{#                <script type="text/javascript" charset="utf-8" async#}
+{#                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A113b8c236b82180d7b9cfda28474709a4d55b15b804bb8534da65902caa2fcee&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>#}
+{#            </div>#}

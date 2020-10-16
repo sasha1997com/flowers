@@ -1,59 +1,59 @@
 <hr>
-<div class="feedback p-1">
-    <h3 style="text-align: left">Остались вопросы?</h3>
-{#    <form action="{% url 'register' %}" method="post">#}
+<div id="feedback" class="castom_container">
+    <h2>Остались вопросы?</h2>
+    <form action="{% url 'register' %}" method="post">
         {% csrf_token %}
         {#        {{ form.non_field_errors }}#}
 
-        <div class="form-group form-row">
+        <div class="form_group form_row">
 
-            <div class="col-12 col-md">
-                <label for="id_name"></label>
-                <input id="id_name" type="text" class="form-control" placeholder="Ваше имя:" name="name"
-                       maxlength="50"
-                       required>
-            </div>
-            <div class="col-12 col-md">
-                <label for="id_phone"> </label>
-                <input id="id_phone" type="tel" class="form-control" placeholder="Номер телефона:" name="phone"
-                       maxlength="25" required>
-            </div>
+            {#            <div class="">#}
+            <label for="id_name"></label>
+            <input id="id_name" type="text" class="form_control" placeholder="Ваше имя:" name="name"
+                   maxlength="50"
+                   required>
+            {#            </div>#}
+            {#            <div class="">#}
+            <label for="id_phone"></label>
+            <input id="id_phone" type="tel" class="form_control" placeholder="Номер телефона:" name="phone"
+                   maxlength="25" required>
+            {#            </div>#}
         </div>
-        <div class="form-group">
+        <div class="form_group">
             <label for="exampleFormControlTextarea1"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="body"
+            <textarea class="form_control" id="exampleFormControlTextarea1" rows="3" name="body"
                       placeholder="Сообщение:"></textarea>
         </div>
 
         <div style="min-height: 7rem">
 
-            <div class="form-group g-recaptcha" id="captcha_castom_style"
-                 data-sitekey="6LdqYK8ZAAAAACxjO8ZQSsYVJRXQiq1W1jg0gHlT"></div>
-            <button id="btn_feedback" type="submit" class="btn btn-warning">
+            <div class="form_group g-recaptcha" id="captcha_castom_style"
+                 data-sitekey="6LdWUdYZAAAAAJoTNXZIrxZO4OxwYDLiAjdqNSmT"></div>
+            <button type="submit" class="button btn_feedback">
                 Заказать обратный звонок
             </button>
         </div>
 
 
         {% for field in form %}
-            <div class="form-group mt-2">
+            <div class="form_group">
                 {% if field.errors %}
-                    <div class="alert alert-danger">
+                    <div class="alert">
                         {{ field.errors }}
                     </div>
                 {% endif %}
             </div>
         {% endfor %}
         {% if messages %}
-            <ul class="messages">
+            <ul class="messages left">
                 {% for message in messages %}
-                    <div class="alert alert-danger">
+                    <div class="alert">
                         <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
                     </div>
                 {% endfor %}
             </ul>
         {% endif %}
-{#    </form>#}
+    </form>
 </div>
 
 
